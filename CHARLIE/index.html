@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"> 
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <title>Charlie The Chip</title>
+    <link rel="icon" type="image/png" href="assets/img/favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="assets/img/favicon-16x16.png" sizes="16x16" />
+  </head>
+  <body>
+    <div id="pageOne">
+      <div id="content">
+      <p class="textOne">Well, hi passenger!</p>
+      <p id="myName">My name is Charlie</p>
+      <p class="textOne">I am the Siberian chipmunk.</p>
+      <p id="msg" class="textOne">I'm crazy about all kinds of nuts, fruits and seeds. As you can see on my portfolio, I am very handsome young fella. If you go to the next page you'll find out more about me :)</p>
+      </div>
+      <a href="about.html"><img  id="faRight" style="bottom: 0px;position: fixed;right: 0px;text-decoration: none;padding: 50px"  src="assets/img/right-white-arrow.png"/></a>
+    </div>
+    <script src="js/arrows.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+        $("#faRight").on({
+          mouseenter: function(){
+              $(this).animate({right: '15px'}, "slow");
+          },  
+          mouseleave: function(){
+              $(this).animate({right: '-15px'}, "slow");
+          }
+        });   
+      });
+    </script>
+  </body>
+</html>

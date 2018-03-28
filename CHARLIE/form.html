@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"> 
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <title>Charlie The Chip</title>
+    <link rel="icon" type="image/png" href="assets/img/favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="assets/img/favicon-16x16.png" sizes="16x16" />
+ </head>
+ 
+  <body>
+        <p class="titleThree">CONTACT</p> 
+        <div id="_form">
+          <form action="action_page.php" method="POST">
+            <label for="fname">First Name *</label>
+            <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+            <label for="lname">Last Name</label>
+            <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+            <label for="email">Email *</label>
+            <input type="text" id="lemail" name="email" placeholder="Your email..">
+
+            <label for="message">Message</label>
+            <input type="text" id="lmessage" name="message" placeholder="Your message..">
+            
+            <input type="submit" value="Submit">
+          </form>
+          <a href="gallery.html"><img  id="faLeft" style="bottom: 0px;position: fixed;left: 0px;text-decoration: none;padding: 50px"  src="assets/img/left-arrow.png"/></a>
+        </div>
+        <script src="js/jquery.min.js"></script>
+        <script src="js/arrows.js"></script>
+        <script>
+            $(document).ready(function(){
+            $("a").on({
+              mouseenter: function(){
+                  $(this).animate({left: '15px'}, "slow");
+              },  
+              mouseleave: function(){
+                  $(this).animate({left: '-15px'}, "slow");
+              }
+            });   
+          });
+          </script>
+  </body>
+</html>
